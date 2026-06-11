@@ -39,4 +39,76 @@
       padding: 15px;
       border: 1px solid #ddd;
       border-radius: 8px;
-      text
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .product:hover {
+      transform: scale(1.05);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .contact a {
+      color: #ff4081;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tienda Fashion</h1>
+    <p>Mitindo ya kisasa kwa bei nafuu</p>
+  </header>
+
+  <nav>
+    <a href="#home">Nyumbani</a>
+    <a href="#products">Bidhaa</a>
+    <a href="#contact">Mawasiliano</a>
+  </nav>
+
+  <section id="products">
+    <h2 style="text-align:center;">Bidhaa Zetu</h2>
+    <div class="product">
+      <img src="dress.jpg" alt="Gauni">
+      <h3>Gauni la Kisasa</h3>
+      <p>Tsh 45,000</p>
+    </div>
+    <div class="product">
+      <img src="shirt.jpg" alt="Shati">
+      <h3>Shati la Kiume</h3>
+      <p>Tsh 30,000</p>
+    </div>
+    <div class="product">
+      <img src="shoes.jpg" alt="Viatu">
+      <h3>Viatu vya Mitindo</h3>
+      <p>Tsh 55,000</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h2>Wasiliana Nasi</h2>
+    <div class="contact">
+      <a href="https://wa.me/255712345678">WhatsApp</a> |
+      <a href="mailto:info@tiendafashion.com">Email</a> |
+      <a href="tel:+255712345678">Simu: +255 712 345 678</a>
+    </div>
+    <p>&copy; 2026 Tienda Fashion</p>
+  </footer>
+</body>
+</html>
