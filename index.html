@@ -1,114 +1,201 @@
 <!DOCTYPE html>
-<html lang="sw">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Tienda Fashion</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #f7f7f7, #ffffff);
-    }
-    header {
-      background: #ff4081;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      animation: fadeIn 2s ease-in-out;
-    }
-    nav {
-      background: #333;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #ff4081;
-    }
-    .product {
-      display: inline-block;
-      width: 250px;
-      margin: 20px;
-      padding: 15px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      text-align: center;
-      background: #fff;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .product:hover {
-      transform: scale(1.05);
-    }
-    .product img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    .contact a {
-      color: #ff4081;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wildlife Management Authority</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    color:#2e7d32;
+    margin-top:10px;
+}
+
+nav{
+    background:#2e7d32;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li{
+    position:relative;
+}
+
+nav ul li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+}
+
+nav ul li a:hover{
+    background:#1b5e20;
+}
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover;
+    height:400px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:45px;
+    background:rgba(0,0,0,0.5);
+    padding:15px;
+}
+
+.section{
+    padding:50px 10%;
+}
+
+.section h2{
+    margin-bottom:20px;
+    color:#2e7d32;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 15px;
+}
+
+.news{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>Tienda Fashion</h1>
-    <p>Mitindo ya kisasa kwa bei nafuu</p>
-  </header>
 
-  <nav>
-    <a href="#home">Nyumbani</a>
-    <a href="#products">Bidhaa</a>
-    <a href="#contact">Mawasiliano</a>
-  </nav>
+<header>
+<h3>THE UNITED REPUBLIC OF TANZANIA</h3>
+<h1>TANZANIA WILDLIFE MANAGEMENT AUTHORITY</h1>
+</header>
 
-  <section id="products">
-    <h2 style="text-align:center;">Bidhaa Zetu</h2>
-    <div class="product">
-      <img src="dress.jpg" alt="Gauni">
-      <h3>Gauni la Kisasa</h3>
-      <p>Tsh 45,000</p>
-    </div>
-    <div class="product">
-      <img src="shirt.jpg" alt="Shati">
-      <h3>Shati la Kiume</h3>
-      <p>Tsh 30,000</p>
-    </div>
-    <div class="product">
-      <img src="shoes.jpg" alt="Viatu">
-      <h3>Viatu vya Mitindo</h3>
-      <p>Tsh 55,000</p>
-    </div>
-  </section>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Conservation</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Publications</a></li>
+<li><a href="#">News & Media</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</nav>
 
-  <footer id="contact">
-    <h2>Wasiliana Nasi</h2>
-    <div class="contact">
-      <a href="https://wa.me/255712345678">WhatsApp</a> |
-      <a href="mailto:info@tiendafashion.com">Email</a> |
-      <a href="tel:+255712345678">Simu: +255 712 345 678</a>
-    </div>
-    <p>&copy; 2026 Tienda Fashion</p>
-  </footer>
+<section class="hero">
+<h2>Protecting Wildlife for Future Generations</h2>
+</section>
+
+<section class="section">
+<h2>Mission</h2>
+<p>
+Conserving biodiversity and cultural heritage for recreation,
+knowledge, life support and prosperity.
+</p>
+</section>
+
+<section class="section">
+<h2>Explore Game Reserves</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1549366021-9f761d450615">
+<h3>Maswa Game Reserve</h3>
+<p>Rich wildlife ecosystem and conservation area.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516426122078-c23e76319801">
+<h3>Selous Game Reserve</h3>
+<p>One of Africa's largest protected areas.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+<h3>Ikorongo Reserve</h3>
+<p>Famous for biodiversity and tourism.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Latest News & Events</h2>
+
+<div class="news">
+<h3>Wildlife Conservation Campaign</h3>
+<p>New conservation initiatives launched across Tanzania.</p>
+</div>
+
+<div class="news">
+<h3>Anti-Poaching Operations</h3>
+<p>Enhanced patrols introduced in protected areas.</p>
+</div>
+
+</section>
+
+<footer>
+<p>&copy; 2026 Tanzania Wildlife Management Authority. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
